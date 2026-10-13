@@ -1,5 +1,24 @@
 /* ITCS333 A2 starter — implement the design spec from index.html here.
    See README rubric for the graded checks. Do not use inline styles. */
+body {
+   font-family: Arial, sans-serif;
+   background-color: lightyellow;
+   margin: 0;
+   color: #333;
+}
+
+.schedule-table {
+   width: 100%;
+   border-collapse: collapse;
+}
+.schedule-table th, .schedule-table td {
+   border: 1px dotted #333;
+   padding: 8px;
+}
+.schedule-table th {
+   background-color: navy;
+   color: white;
+}
 
 #site-header {
    padding: 20px;
@@ -10,6 +29,7 @@
    padding: 20px;
    border: 1px solid maroon;
    gap: 10px;
+   background-color: white;
 }
 
 .card-grid {
