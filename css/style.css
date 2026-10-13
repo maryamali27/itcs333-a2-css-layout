@@ -1,7 +1,55 @@
 /* ITCS333 A2 starter — implement the design spec from index.html here.
    See README rubric for the graded checks. Do not use inline styles. */
+body {
+   font-family: Arial, sans-serif;
+   background-color: lightyellow;
+   margin: 0;
+   color: #333;
+}
 
-/* TODO: style #site-header (padding, border-bottom) */
-/* TODO: style .card (padding, border, gap) and .card-grid (display, gap, 3 columns) */
-/* TODO: style form inputs (padding) and a :focus state */
-/* TODO: add a @media (max-width: 700px) query collapsing .card-grid to one column */
+.schedule-table {
+   width: 100%;
+   border-collapse: collapse;
+}
+.schedule-table th, .schedule-table td {
+   border: 1px dotted #333;
+   padding: 8px;
+}
+.schedule-table th {
+   background-color: navy;
+   color: white;
+}
+
+#site-header {
+   padding: 20px;
+   border-bottom: 3px solid navy;
+}
+
+.card {
+   padding: 20px;
+   border: 1px solid maroon;
+   gap: 10px;
+   background-color: white;
+}
+
+.card-grid {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+}
+
+input {
+   padding: 8px;
+   border: 1px solid gray;
+}
+
+input:focus {
+   border-color: navy;
+   outline: 2px solid navy;
+}
+
+@media (max-width: 700px) {
+   .card-grid {
+      grid-template-columns: 1fr;
+   }
+}
